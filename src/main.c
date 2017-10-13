@@ -12,22 +12,23 @@ int main() {
     /* Imprime resultado da n-esima iteracao do scheduler */
 
     for (int j=0; j<5; j++) {
+    /* Imprime resultado do j-esimo processo executado no ciclo atual */
 
-      if (((i+1)%a[j])==0){
+      if (((i+1)%a[j])==0){	//verifica se processo executa neste ciclo
 
         printf ("%d", j);
-        flag = 1;
+        flag = 1;		//sinaliza que há processo no ciclo atual
 
       }
 
     }
 
-    if (flag == 0){
+    if (flag == 0){		//caso não haja processo no ciclo
       printf("-");
     }
      
-    flag = 0;
-    printf("\n");
+    flag = 0;			//reseta flag de ausencia de processo
+    printf("\n");		//proximo ciclo
 
   }
 
