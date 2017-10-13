@@ -25,7 +25,8 @@ int main() {
     if (flag == 0){
       printf("-");
     }
-
+     
+    flag = 0;
     printf("\n");
 
   }
