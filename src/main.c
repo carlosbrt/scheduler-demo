@@ -2,7 +2,7 @@
 
 int main() {
   int a[5];
-  int n;
+  int n, flag=0;
 
   scanf("%d %d %d %d %d %d", &(a[0]), &(a[1]), &(a[2]), &(a[3]), &(a[4]), &n);
 
@@ -16,10 +16,16 @@ int main() {
       if (((i+1)%a[j])==0){
 
         printf ("%d", j);
+        flag = 1;
 
       }
 
     }
+
+    if (flag == 0){
+      printf("-");
+    }
+
     printf("\n");
 
   }
